@@ -42,6 +42,22 @@
     gap: 15px;
 }
 
+.videos__item {
+    height: 303px;
+    width: 280px;
+    flex-grow: 1;
+}
+
+.videos__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.descricao-video {
+    display: flex;
+}
+
 .rodape__container {
     display: flex;
     flex-direction: column;
@@ -78,14 +94,39 @@
     .menu__container {
         width: 239px;
         overflow: scroll;
+        gap: 15px;
     }
 
-    .menu__lista:nth-child(2),.menu__lista:nth-child(3),.menu__lista:nth-child(4) {
+    .menu__lista:nth-child(2), .menu__lista:nth-child(3), .menu__lista:nth-child(4) {
         display: block;
     }
 
     .menu__lista {
         height: auto;
         padding: 20px 17px 20px 15px;
+        gap: 15px;
+    }
+
+    .menu__itens {
+        flex-direction: row;
+        padding: 7.5px 0;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .jogos {
+        order: 3;
+    }
+
+    .filmes {
+        order: 2;
+    }
+
+    .premium {
+        order: 1;
+    }
+
+    .maispagina {
+        order: 4;
     }
 }
